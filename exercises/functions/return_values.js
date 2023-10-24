@@ -15,3 +15,14 @@ function add(x, y) {
 
 let theAnswer = add(3,5);
 console.log(theAnswer);
+
+
+function doIt() {
+    console.log("do it");
+    // return undefined;
+}
+
+let x = doIt();
+console.log("x: " + x);
+
+
