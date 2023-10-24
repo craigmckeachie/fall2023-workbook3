@@ -10,13 +10,13 @@ displayFavoriteThings(variable1, "d", variable3);
 
 function displayFavoriteThings(name, movie, band) {
   let message = ` 
-                ${name}   dsfkdfjlsfdkjl
-
-                
+                ${name}
                 ${movie}
                 ${band}
                  `;
   console.log(message);
+
+  //OR
   // console.log("Name: " + name);
   // console.log("Movie: " + movie);
   // console.log("Band: " + band);
