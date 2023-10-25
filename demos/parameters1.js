@@ -20,4 +20,4 @@ let variable1 = "a";
 let variable2 = "b";
 let variable3 = "c";
 
-displayFavoriteThings(variable1, "d", variable3);
+displayFavoriteThings(variable1, variable2, variable3);

@@ -4,8 +4,9 @@ function displayFavoriteThings(name, movie, band) {
     console.log("Band: " + band);
 }
 
+displayFavoriteThings("Ronald", "Dude, where's my car", "Taylor Swift")
 // displayFavoriteThings("Craig", "Seven", "A Tribe Called Quest");
 // displayFavoriteThings("A Tribe Called Quest", "Seven", "Craig" );
 // displayFavoriteThings(1, 2, 3)
 
-displayFavoriteThings("c", "a", "b" );
+// displayFavoriteThings("a", "x", "b" );
