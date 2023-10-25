@@ -1,20 +1,18 @@
 //global
-let magicNumber = 0;
+let count = 0;
 
-
-function increment(myCount) {
-    myCount = myCount + 1;
+function increment() {
+  count = count + 1;
 }
 
-// function decrement() {
-//   count = count - 1;
-// }
+function decrement() {
+  count = count - 1;
+}
 
-increment(magicNumber);
-// increment();
-// increment();
-// increment();
-// decrement();
+increment();
+increment();
+increment();
+increment();
+decrement();
 
-
-console.log(magicNumber);
+console.log(count);
