@@ -9,10 +9,10 @@ function decrement() {
   count = count - 1;
 }
 
-increment();
-increment();
-increment();
-increment();
-decrement();
+increment(); //1
+increment(); //2
+increment(); //3
+increment(); //4
+decrement(); //3
 
 console.log(count);
