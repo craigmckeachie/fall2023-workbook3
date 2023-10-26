@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Picker</title>
+  </head>
+  <body>
+    <input type="date" id="dateInput" />
+    <button onclick="displayDate()">Submit</button>
+    <p id="dateParagraph"></p>
+    <script>
+      let dateParagraph = document.getElementById("dateParagraph");
+      let userInput = document.getElementById("dateInput");
+
+      function displayDate() {
+        let d = new Date(userInput.value);
+        //console.log(d.toString());
+        dateParagraph.innerText = d.toString();
+      }
+    </script>
+  </body>
+</html>
