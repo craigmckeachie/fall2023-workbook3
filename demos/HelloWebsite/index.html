@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Anonymous Functions</title>
+  </head>
+  <body>
+    <p id="messageParagraph"></p>
+    <button id="showMessageButton">Show Message</button>
+    <script>
+      "use strict";
+      function sayHello() {
+        const p = document.getElementById("messageParagraph");
+        p.innerText = "Hello";
+      }
+
+      function init() {
+        let showMessageButton = document.getElementById("showMessageButton");
+        showMessageButton.onclick = sayHello;
+      }
+
+      window.onload = init;
+    </script>
+  </body>
+</html>
