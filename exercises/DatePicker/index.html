@@ -7,17 +7,27 @@
   </head>
   <body>
     <input type="date" id="dateInput" />
-    <button onclick="displayDate()">Submit</button>
+    <button id="displayDateButton">Display Date</button>
     <p id="dateParagraph"></p>
     <script>
-      let dateParagraph = document.getElementById("dateParagraph");
-      let userInput = document.getElementById("dateInput");
+      const dateParagraph = document.getElementById("dateParagraph");
+      const userInput = document.getElementById("dateInput");
+      const displayDateButton = document.getElementById("displayDateButton");
 
       function displayDate() {
         let d = new Date(userInput.value);
-        //console.log(d.toString());
         dateParagraph.innerText = d.toString();
       }
+
+      function init() {
+        displayDateButton.onclick = displayDate;
+      }
+
+
+      window.onload = init;
+
+
+
     </script>
   </body>
 </html>
