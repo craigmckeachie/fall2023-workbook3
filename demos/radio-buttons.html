@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radio Buttons</title>
     <style>
-        /* .radio-group{
+      /* .radio-group{
             display: flex;
             flex-direction: column;
             max-width: 10rem;
@@ -31,24 +31,23 @@
       </fieldset>
     </main>
     <script>
-        //get the html elements
-        const autoRadio = document.getElementById("autoRadio");
-        const homeRadio = document.getElementById("homeRadio");
-        const lifeRadio = document.getElementById("lifeRadio");
-        const saveButton = document.getElementById("saveButton");
+      //get the html elements
+      const autoRadio = document.getElementById("autoRadio");
+      const homeRadio = document.getElementById("homeRadio");
+      const lifeRadio = document.getElementById("lifeRadio");
+      const saveButton = document.getElementById("saveButton");
 
-        //functions to handle events
-        function save() {
-            console.log("Auto: " + autoRadio.checked);
-            console.log("Home: " + homeRadio.checked);
-            console.log("Life: " + lifeRadio.checked);
-        }
+      //functions to handle events
+      function save() {
+        console.log("Auto: " + autoRadio.checked);
+        console.log("Home: " + homeRadio.checked);
+        console.log("Life: " + lifeRadio.checked);
+      }
 
-
-        //wire-up functions to events
+      //wire-up functions to events
+      window.onload = function init() {
         saveButton.onclick = save;
-
-
+      };
     </script>
   </body>
 </html>
