@@ -27,13 +27,26 @@
 
         <input type="radio" name="policyType" id="lifeRadio" />
         <label for="lifeRadio">Life</label>
+        <button id="saveButton">Save</button>
       </fieldset>
     </main>
     <script>
         //get the html elements
-        
+        const autoRadio = document.getElementById("autoRadio");
+        const homeRadio = document.getElementById("homeRadio");
+        const lifeRadio = document.getElementById("lifeRadio");
+        const saveButton = document.getElementById("saveButton");
+
         //functions to handle events
+        function save() {
+            console.log("Auto: " + autoRadio.checked);
+            console.log("Home: " + homeRadio.checked);
+            console.log("Life: " + lifeRadio.checked);
+        }
+
+
         //wire-up functions to events
+        saveButton.onclick = save;
 
 
     </script>
