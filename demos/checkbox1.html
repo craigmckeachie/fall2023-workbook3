@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox 1</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="activeCheckbox" />
+    <label for="activeCheckbox">Is Active?</label>
+    <button id="displayButton">Display</button>
+    <script>
+      //get html elements into variables
+      const activeCheckbox = document.getElementById("activeCheckbox");
+
+      //write functions that will handle (be called) when events on the page occur (event handlers)
+      function display() {
+        alert(activeCheckbox.checked);
+      }
+
+      //connect or wire-up your event handler functions to events
+      displayButton.onclick = display;
+    </script>
+  </body>
+</html>
