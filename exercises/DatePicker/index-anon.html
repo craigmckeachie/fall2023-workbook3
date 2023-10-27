@@ -23,13 +23,11 @@
       }
 
       //connect or wire-up your event handler functions to events
-      function init() {
+      window.onload = function () {
+        displayDateButton.onclick = displayDate;
 
         
-        displayDateButton.onclick = displayDate;
-      }
-      
-      window.onload = init;
+      };
 
    
 
