@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radio Buttons</title>
-</head>
-<body>
+    <style>
+        /* .radio-group{
+            display: flex;
+            flex-direction: column;
+            max-width: 10rem;
+            justify-items: center;
+        }
+        .radio-group label, input{
+            display: inline;
+        } */
+    </style>
+  </head>
+  <body>
     <main>
-        <input type="radio" name="policyType" id="autoRadio">
+      <fieldset class="radio-group">
+        <input type="radio" name="policyType" id="autoRadio" />
         <label for="autoRadio">Auto</label>
-        
-        <input type="radio" name="policyType" id="homeRadio">
+
+        <input type="radio" name="policyType" id="homeRadio" />
         <label for="homeRadio">Home</label>
 
-        <input type="radio" name="policyType" id="lifeRadio">
+        <input type="radio" name="policyType" id="lifeRadio" />
         <label for="lifeRadio">Life</label>
+      </fieldset>
     </main>
     <script>
+        //get the html elements
+        
+        //functions to handle events
+        //wire-up functions to events
+
 
     </script>
-</body>
+  </body>
 </html>
