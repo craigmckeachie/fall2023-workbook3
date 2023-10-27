@@ -10,24 +10,23 @@
     <button id="displayDateButton">Display Date</button>
     <p id="dateParagraph"></p>
     <script>
+      //get html elements into variables
       const dateParagraph = document.getElementById("dateParagraph");
       const userInput = document.getElementById("dateInput");
       const displayDateButton = document.getElementById("displayDateButton");
 
+      //write functions that will handle (be called) when events on the page occur (event handlers)
       function displayDate() {
         let d = new Date(userInput.value);
         dateParagraph.innerText = d.toString();
       }
 
+      //connect or wire-up your event handler function to events
       function init() {
         displayDateButton.onclick = displayDate;
       }
 
-
       window.onload = init;
-
-
-
     </script>
   </body>
 </html>
