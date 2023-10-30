@@ -10,6 +10,9 @@
       <label for="nameTextbox">Name</label>
       <input type="text" id="nameTextbox" />
       <button id="greetButton">Greet</button>
+      <p id="messageParagraph">
+       
+      </p>
     </main>
     <script>
       "use strict";
@@ -17,11 +20,13 @@
       // let variableNameHoldingHTMLElement = document.getElementById("idOfHTMLElement")
       let nameTextbox = document.getElementById("nameTextbox");
       let greetButton = document.getElementById("greetButton");
+      let messageParagraph = document.getElementById("messageParagraph");  
 
       // write functions to handle events
       function greetByName() {
         let name = nameTextbox.value;
-        console.log("Hello " + name);
+        let message = "Hello " + name;
+        messageParagraph.innerText = message;
       }
 
       //wire-up the functions to an event
