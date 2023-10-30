@@ -12,7 +12,19 @@
       <button id="greetButton">Greet</button>
     </main>
     <script>
-        
+      "use strict";
+      //get html elements
+      // let variableNameHoldingHTMLElement = document.getElementById("idOfHTMLElement")
+      let nameTextbox = document.getElementById("nameTextbox");
+      let greetButton = document.getElementById("greetButton");
+
+      // write functions to handle events
+      function greetByName() {
+        console.log("hello");
+      }
+
+      //wire-up the functions to an event
+      greetButton.onclick = greetByName;
     </script>
   </body>
 </html>
